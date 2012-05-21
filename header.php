@@ -61,7 +61,7 @@
 				<?php $heading_tag = ( is_home() || is_front_page() ) ? 'h1' : 'div'; ?>
 				<<?php echo $heading_tag; ?> id="site-title">
 					<span>
-						<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="http://localhost/wordpress/wp-content/uploads/2012/05/digitalAnatolia_head.png"></a>
+						<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php bloginfo('template_directory'); ?>/images/DigitalAnatolia_head.png" title="<?php bloginfo('site_title'); ?>" /></a>
 					</span>
 				</<?php echo $heading_tag; ?>>
 				
