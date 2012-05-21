@@ -506,3 +506,17 @@ function twentyten_posted_in() {
 	);
 }
 endif;
+
+add_action( 'init', 'create_post_type' );
+function create_post_type() {
+	register_post_type( 'da_contributors',
+		array(
+			'labels' => array(
+				'name' => __( 'Contributors' ),
+				'singular_name' => __( 'Contributor' )
+			),
+		'public' => true,
+		'has_archive' => true,
+		)
+	);
+}
