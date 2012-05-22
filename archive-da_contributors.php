@@ -1,6 +1,6 @@
 <?php
 /**
-Template name: Contributors
+
  */
 
 get_header(); ?>
