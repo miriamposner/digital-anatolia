@@ -1,6 +1,6 @@
 <?php
 /**
-
+Template name: Contributors
  */
 
 get_header(); ?>
@@ -35,10 +35,15 @@ get_header(); ?>
 $args = array( 'post_type' => 'da_contributors', 'posts_per_page' => 20 );
 $loop = new WP_Query( $args );
 while ( $loop->have_posts() ) : $loop->the_post();
-	the_title();
+	echo '<div class="contributor">';
+	echo '<h3>';
+	the_title(); 
+	echo '</h3>';
 	echo '<div class="entry-content">';
 	the_content();
 	echo '</div>';
+	echo '</div>';
 endwhile; ?>
+
 
 <?php get_footer(); ?>

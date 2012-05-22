@@ -513,10 +513,11 @@ function create_post_type() {
 		array(
 			'labels' => array(
 				'name' => __( 'Contributors' ),
-				'singular_name' => __( 'Contributor' )
+				'singular_name' => __( 'Contributor' ),
 			),
 		'public' => true,
 		'has_archive' => true,
+		'taxonomies' => array('post_tag','category')
 		)
 	);
 }
