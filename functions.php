@@ -517,7 +517,8 @@ function create_post_type() {
 			),
 		'public' => true,
 		'has_archive' => true,
-		'taxonomies' => array('post_tag','category')
 		)
 	);
 }
+
+register_taxonomy("Team", array("da_contributors"), array("hierarchical" => true, "label" => "Team", "singular_label" => "Team", "rewrite" => true));
