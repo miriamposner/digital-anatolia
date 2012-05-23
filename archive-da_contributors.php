@@ -31,7 +31,7 @@ get_header(); ?>
 			</h1>
 -->
 
-<?php
+<!-- <?php
 $args = array( 'post_type' => 'da_contributors', 'posts_per_page' => 20 );
 $loop = new WP_Query( $args );
 while ( $loop->have_posts() ) : $loop->the_post();
@@ -43,7 +43,40 @@ while ( $loop->have_posts() ) : $loop->the_post();
 	the_content();
 	echo '</div>';
 	echo '</div>';
-endwhile; ?>
+endwhile; ?> -->
+<div class="contributors">
+
+<?php
+  query_posts( array( 'post_type' => 'da_contributors', 'team' => 'on-site' ) );
+  if ( have_posts() ) : while ( have_posts() ) : the_post();
+?>
+<h2>On-Site</h2>
+  <h3><?php the_title(); ?></h3>
+  <?php the_content(); ?>
+
+<?php endwhile; endif; wp_reset_query(); ?>
+
+<?php
+  query_posts( array( 'post_type' => 'da_contributors', 'team' => 'hypercities' ) );
+  if ( have_posts() ) : while ( have_posts() ) : the_post();
+?>
+<h2>Hypercities</h2>
+  <h3><?php the_title(); ?></h3>
+  <?php the_content(); ?>
+
+<?php endwhile; endif; wp_reset_query(); ?>
+
+<?php
+  query_posts( array( 'post_type' => 'da_contributors', 'team' => 'webteam' ) );
+  if ( have_posts() ) : while ( have_posts() ) : the_post();
+?>
+<h2>Web Team</h2>
+  <h3><?php the_title(); ?></h3>
+  <?php the_content(); ?>
+
+<?php endwhile; endif; wp_reset_query(); ?>
+
+</div>
 
 
 <?php get_footer(); ?>
