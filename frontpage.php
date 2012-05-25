@@ -11,6 +11,12 @@ get_header(); ?>
 			
 			</div><!-- #content -->
 		</div><!-- #container -->
+		
+<?php
+	if (class_exists(‘Gallery’)) {
+	$Gallery = new Gallery();
+	$Gallery -> slideshow($output = true, $post_id = null);
+		} ?>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

@@ -419,16 +419,19 @@ div.menu li {
 	top: 0;
 }
 #access ul ul a {
-	background: #333;
+	background: #96722c;
+	color: #f1f1f1;
 	line-height: 28px;
 	padding: 10px;
 	width: 160px;
 	height: auto;
+	font-size: 11px;
+	letter-spacing: 1px;
+	margin-top:  -10px;
 }
-#access li:hover > a,
-#access ul ul :hover > a {
-	background: #ecf7e7;
-	color: #5f716f;
+
+#access ul ul a:hover{
+	background: #96722c;
 }
 #access ul li:hover > ul {
 	display: block;
@@ -437,7 +440,7 @@ div.menu li {
 #access ul li.current-menu-ancestor > a,
 #access ul li.current-menu-item > a,
 #access ul li.current-menu-parent > a {
-	color: #ecf7e7;
+	color: #f1f1f1;
 	background-color: #b65011;
 }
 * html #access ul li.current_page_item a,
@@ -446,6 +449,13 @@ div.menu li {
 * html #access ul li.current-menu-parent a,
 * html #access ul li a:hover {
 	color: #5f716f;
+	background: #96722c;
+}
+
+#access li:hover > a,
+#access ul ul :hover > a{
+	background: #96722c;
+	color: #f1f1f1;
 }
 
 
@@ -1338,4 +1348,8 @@ code {
 	.home .sticky {
 		border: none;
 	}
+}
+
+.slider {
+	width: 400px;
 }
