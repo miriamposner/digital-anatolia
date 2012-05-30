@@ -30,6 +30,8 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 }
 body {
 	line-height: 1;
+	height:  100%;
+	padding-bottom: 54px;
 }
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
@@ -583,10 +585,12 @@ div.menu li {
 	font-weight: bold;
 	line-height: 1.3em;
 	margin-bottom: 0;
+	text-transform: uppercase;
+	letter-spacing: .2em;
 }
 .entry-title a:link,
 .entry-title a:visited {
-	color: #000;
+	color: #b65011;
 	text-decoration: none;
 }
 .entry-title a:active,
@@ -594,9 +598,10 @@ div.menu li {
 	color: #ff4b33;
 }
 .entry-meta {
-	color: #888;
+	color: #96722c;
 	font-size: 12px;
 }
+
 .entry-meta abbr,
 .entry-utility abbr {
 	border: none;
@@ -716,11 +721,12 @@ body.page .edit-link {
 }
 .entry-meta a,
 .entry-utility a {
-	color: #888;
+	color: #7D5F25;
+	text-decoration: none;
 }
 .entry-meta a:hover,
 .entry-utility a:hover {
-	color: #ff4b33;
+	color: #7D5F25;
 }
 #content .video-player {
 	padding: 0;
@@ -1200,6 +1206,96 @@ h3#reply-title {
 	height: 11px;
 }
 
+/* Twitter Widget */
+
+.widget_twitter .twitterwidget-title {
+	color: #eccf3d;
+	font-family: "Open Sans", sans-serif;
+	font-size: 110%;
+	text-transform:uppercase;
+	line-height: 40px;
+	
+}
+.widget_twitter div {
+    padding-bottom:20px;
+    width: 150px;
+}
+
+.widget_twitter ul li {
+    margin-bottom:5px;
+}
+
+.widget_twitter .follow-button,
+.widget_twitter .xavisys-link {
+    margin:0 10px 10px 25px;
+}
+.widget_twitter .entry-meta {
+    display:block;
+    font-size:80%;
+}
+.widget_twitter .intent-meta a /* this controls reply, fav, retweet at bottom*/{
+    background-image: url(images/everything-spritev2.png); /*get from Twitter resources */
+    display: inline-block;
+    height: 16px;
+    text-indent: -9999px;
+    width: 16px;
+    display:none;
+}
+.widget_twitter .intent-meta a.in-reply-to {
+    background-position: 0 center;
+}
+.widget_twitter .intent-meta a:hover.in-reply-to {
+    background-position: -16px center;
+}
+.widget_twitter .intent-meta a.favorite {
+    background-position: -32px center;
+}
+.widget_twitter .intent-meta a:hover.favorite {
+    background-position: -48px center;
+}
+.widget_twitter .intent-meta a.retweet {
+    background-position: -80px center;
+}
+.widget_twitter .intent-meta a:hover.retweet {
+    background-position: -96px center;
+}
+
+
+.widget_twitter .entry-content /*styles actual tweet text*/{
+	color: #96722c;
+	font-family: "Droid Serif", serif;
+	font-size: 9px;	
+}	
+.widget_twitter a:link,
+.widget_twitter a:visited {
+	text-decoration: none;
+	color: #7d5f25;
+}
+.widget_twitter a:active,
+.widget_twitter a:hover {
+	text-decoration: none;
+}
+.widget_twitter .entry-meta {
+	font-family: "Droid Serif", serif;
+	color: #b65011;
+}
+
+.from-meta {
+	display: none;
+}
+
+.time-meta a:link {
+	color: #b65011;
+	font-size: 8px;
+}
+.in-reply-to-meta {
+	display: none;
+}
+
+#twitter-2 li {
+	padding-bottom: 30px;
+}
+
 /* Main sidebars */
 #main .widget-area ul {
 	margin-left: 0;
@@ -1207,7 +1303,7 @@ h3#reply-title {
 }
 #main .widget-area ul ul {
 	border: none;
-	margin-left: 1.3em;
+	margin-left: 0;
 	padding: 0;
 }
 #primary {
@@ -1373,3 +1469,4 @@ code {
 .slider {
 	width: 400px;
 }
+
