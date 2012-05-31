@@ -1284,7 +1284,8 @@ h3#reply-title {
 	display: none;
 }
 
-.time-meta a:link {
+.time-meta a:link,
+.time-meta a:visited {
 	color: #b65011;
 	font-size: 8px;
 }
@@ -1294,6 +1295,11 @@ h3#reply-title {
 
 #twitter-2 li {
 	padding-bottom: 30px;
+}
+
+.widget_twitter .follow-button,
+.widget_twitter .xavisys-link {
+    margin:0 10px 10px 0px;
 }
 
 /* Main sidebars */
