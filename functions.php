@@ -522,3 +522,18 @@ function create_post_type() {
 }
 
 register_taxonomy("Team", array("da_contributors"), array("hierarchical" => true, "label" => "Team", "singular_label" => "Team", "rewrite" => true));
+
+function featured_init() {
+	// create a new taxonomy
+	register_taxonomy(
+		'featured',
+		'page',
+		array(
+			'label' => __( 'Featured' ),
+			'sort' => true,
+			'args' => array( 'orderby' => 'term_order' ),
+			'rewrite' => array( 'slug' => 'featured' )
+		)
+	);
+}
+add_action( 'init', 'featured_init' );
