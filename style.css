@@ -1302,6 +1302,29 @@ h3#reply-title {
     margin:0 10px 10px 0px;
 }
 
+/*this section controls archives/categories on the updates page*/
+#primary .widget_archive .widget-title,
+#primary .widget_categories .widget-title {
+	font-family: "Open Sans", sans-serif;
+	color: #B65011;
+	font-size: 1em;
+	letter-spacing:.16em;
+	text-transform: uppercase;
+	margin-bottom: 1em;
+}
+#primary .widget_archive a,
+#primary .widget_categories a,
+#primary .widget_archive a:visited
+#primary .widget_categories a:visited {
+	font-family: "Droid Serif", serif;
+	color: #96722C;
+	font-size: .9em;
+	text-transform: uppercase;
+	margin: 0 0 0 1em;
+}
+.widget_archive {
+	margin-bottom: 5em;
+}
 /* Main sidebars */
 #main .widget-area ul {
 	margin-left: 0;
