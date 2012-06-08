@@ -595,7 +595,7 @@ div.menu li {
 }
 .entry-title a:active,
 .entry-title a:hover {
-	color: #ff4b33;
+	color: #994;
 }
 .entry-meta {
 	color: #96722c;
@@ -1502,3 +1502,11 @@ code {
 	width: 400px;
 }
 
+#nehlogo img {
+	width: 200px;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+}

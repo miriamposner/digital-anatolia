@@ -12,16 +12,21 @@
 ?>
 	</div><!-- #main -->
 
+<div id="nehlogo">
+	<span>
+	<img src="<?php bloginfo('template_directory'); ?>/images/NEH.png" title="<?php bloginfo('nehlogo'); ?>"/>
+	</span>
+</div><!-- #nehlogo -->
+
 	<div id="footer" role="contentinfo">
 		<div id="colophon">
-
+	
 <?php
 	/* A sidebar in the footer? Yep. You can can customize
 	 * your footer with four columns of widgets.
 	 */
 	get_sidebar( 'footer' );
 ?>
-
 			<div id="site-info">
 				Copyright <?php the_time('Y') ?>
 			</div><!-- #site-info -->
