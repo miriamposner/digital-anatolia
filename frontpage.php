@@ -12,9 +12,6 @@ get_header(); ?>
 					<?php echo do_shortcode('[portfolio_slideshow ID=59]');?>
 				</div><!-- #slideshow -->
 				
-				<div id="nehlogo">
-					<img src="<?php bloginfo('template_directory'); ?>/images/NEH.png" title="<?php bloginfo('site_title'); ?>" />
-				</div><!-- #nehlogo -->
 			</div><!-- #content -->
 		</div><!-- #container -->
 

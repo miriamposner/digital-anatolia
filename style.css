@@ -402,10 +402,9 @@ div.menu li {
 	color: #5f716f;
 	display: block;
 	line-height: 28px;
-	margin: 0 50px 0px 10px;
+	margin: 0 50px 0px 8px;
 	padding-left: 5px;
 	padding-right: 5px;
-	;
 	text-decoration: none;
 	font-family: "Ubuntu Condensed", sans-serif;
 	text-transform: uppercase;
@@ -449,15 +448,19 @@ div.menu li {
 	background: #96722c;
 	color: #b6dda3;
 }
-#access ul li.current-menu-item > a,
+#access ul li.current-menu-item > a {
+color: #B6DDA3;
+background-color: #96722c;
+}
+
 #access ul li.current-menu-parent > a {
 	color: #f1f1f1;
-	background-color: #b65011;
+	background-color: #B6DDA3;
 }
 * html #access ul li.current_page_item a,
 * html #access ul li.current-menu-ancestor a,
 * html #access ul li.current-menu-item a,
-* html #access ul li.current-menu-parent a,
+* html #access ul li.current-menu-parent a 
 * html #access ul li a:hover {
 	color: #5f716f;
 	background: #96722c;
@@ -481,13 +484,30 @@ div.menu li {
 #content {
 	margin-bottom: 36px;
 }
+.entry-content {
+width: 650px;
+font-size: 13px;
+font-family: "Droid Serif", serif;
+}
 #content,
 #content input,
 #content textarea {
 	color: #333;
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 24px;
 }
+
+div.column {
+	-webkit-column-count: 2;
+	-webkit-column-width: 300px !important;
+	-webkit-column-gap: 40px;
+	font-family: 'Open-sans', sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    margin-top: 10px;
+    text-align: justify;
+}
+
 #content p,
 #content ul,
 #content ol,
@@ -595,7 +615,7 @@ div.menu li {
 }
 .entry-title a:active,
 .entry-title a:hover {
-	color: #994;
+	color: #ff4b33;
 }
 .entry-meta {
 	color: #96722c;
@@ -684,7 +704,7 @@ div.menu li {
 }
 body.page .edit-link {
 	clear: both;
-	display: block;
+	display: none;
 }
 #entry-author-info {
 	background: #f2f7fc;
@@ -1129,7 +1149,7 @@ h3#reply-title {
 
 .widget-area ul {
 	list-style: none;
-	margin-left: 0;
+
 }
 .widget-area ul ul {
 	list-style: square;
@@ -1214,7 +1234,7 @@ h3#reply-title {
 	font-size: 110%;
 	text-transform:uppercase;
 	line-height: 40px;
-	
+
 }
 .widget_twitter div {
     padding-bottom:20px;
@@ -1444,6 +1464,7 @@ code {
 	.entry-content {
 		font-size: 14pt;
 		line-height: 1.6em;
+		
 	}
 	.entry-title {
 		font-size: 21pt;
@@ -1495,18 +1516,112 @@ code {
 	}
 	.home .sticky {
 		border: none;
-	}
-}
-
-.slider {
-	width: 400px;
-}
-
-#nehlogo img {
+	}}
+	
+	#nehlogo img {
 	width: 200px;
 	height: auto;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 10px;
+	/*margin-left: auto;
+	margin-right: auto;*/
+	margin-left: 350px;
+}
+
+/*---------------------------SLIDESHOW------------------------*/
+.slideshow, #slideshow, .slideshow-content {
+height: 200px;
+padding-bottom: 200px;
+}
+
+.portfolio-slideshow {
+height: 200px !important;
+}
+
+.slideshow-wrapper {
+height: 200px;
+}
+
+
+.slider {
+width: 400px;
+}
+
+
+.psp-active {
+width: 300px;
+height: auto;
+float: left;
+z-index: 1;
+}
+
+#pager0 {
+display: none;
+}
+
+.slideshow-meta {
+	font-size: 12px;
+	font-family: "Droid serif", serif;
+	color: #000;
+	font-weight: normal;
+	line-height: 17px;
+}
+
+.slideshow-nav,
+.slideshow-nav a,
+.slideshow-nav a:hover {
+	font-family: "Open Sans", sans-serif;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 16px;
+	text-decoration: none !important;
+	margin: 30px 50px 10px 0 !important;
+	
+}
+.slideshow-title {
+font-family: "Open Sans", sans-serif;
+text-transform: uppercase;
+font-size: 14px;
+letter-spacing: 1px;
+color: #f1f1f1;
+font-weight: bold;
+z-index: 1000 !important;
+padding-left: 14px !important;
+position: absolute;
+}
+
+.slideshow-description {
+width: 300px;
+height: 250px;
+overflow: hidden;
+margin-left: 320px !important;
+
+
+}
+.slideshow-nav a.play {
+display: none;
+}
+
+
+
+/*a.slideshow-next, a.slideshow-next:hover, .sliedshow-nav {
+margin-top: 0 !important;
+margin-left: 200px !important;
+}
+
+.arrows {
+margin-left: 200px;
+margin-top: 0;
+}
+*/
+
+/* ---------------------------------- HYPERCITIES --------------------------------*/
+
+.one-column #content {
+	margin: 0 auto;
+	width: 900px;
+}
+
+
+#content, .one-column #content {
+	margin: 0;
+	width: 100%;
 }
