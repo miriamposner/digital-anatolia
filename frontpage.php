@@ -8,6 +8,7 @@ get_header(); ?>
 		<div id="container">
 			<div id="content" role="main">
 
+<h1 id="featured-articles">FEATURED ARTICLES</h1>
 				<div id="slideshow">
 					<?php echo do_shortcode('[portfolio_slideshow ID=59]');?>
 				</div><!-- #slideshow -->
